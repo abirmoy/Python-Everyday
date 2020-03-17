@@ -81,7 +81,6 @@ Abir
 receivers = open('temp.txt', 'r').readlines()
 password = input("Enter Password(Be careful password will visible on terminal): ")
 
-
 for i in receivers:
     i = [i.replace('\n', ''), ] # converting into list, also removing the '\n'
     print(i)
