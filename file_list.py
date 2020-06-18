@@ -24,7 +24,7 @@ def getListOfFiles(dirName = os.getcwd()):
  
 
     
-dirName =  = os.getcwd() # SAVING FILE TO THE CURRENT LOCATION
+dirName = os.getcwd() # SAVING FILE TO THE CURRENT LOCATION
 result = open("booklist.txt", "w", encoding='utf8')
 
 # Get the list of all files in directory tree at given path
