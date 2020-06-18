@@ -4,7 +4,7 @@ import os
 '''
     For the given path, get the List of all files in the directory tree 
 '''
-def getListOfFiles(dirName):
+def getListOfFiles(dirName = os.getcwd()):
     # create a list of file and sub directories 
     # names in the given directory 
     listOfFile = os.listdir(dirName)
@@ -24,7 +24,7 @@ def getListOfFiles(dirName):
  
 
     
-dirName = 'F:\Programs\New Folder'
+dirName =  = os.getcwd() # SAVING FILE TO THE CURRENT LOCATION
 result = open("booklist.txt", "w", encoding='utf8')
 
 # Get the list of all files in directory tree at given path
