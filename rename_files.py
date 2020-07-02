@@ -21,7 +21,17 @@ def rename_by_order(extention, path = os.getcwd()):
       os.rename(entry, str(i) + extention)
       i += 1
 
-    
+def replace_char(to_be_replaced, by_replace='' ,path = os.getcwd()):
+  '''
+  to_be_replaced: symbol or character need to be replaced
+  by_replace: symbol or character 
+  '''
+  with os.scandir(path) as entries:
+  for entry in entries:
+    # if '+Bhoot_FM-' in entry.name:
+    # os.rename(entry, entry.name.strip())
+    # os.rename(entry, string.capwords(entry.name))
+    os.rename(entry, entry.name.replace(to_be_replaced, by_replace))  
 
 
 path = ''
