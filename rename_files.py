@@ -27,11 +27,11 @@ def replace_char(to_be_replaced, by_replace='' ,path = os.getcwd()):
   by_replace: symbol or character 
   '''
   with os.scandir(path) as entries:
-  for entry in entries:
-    # if '+Bhoot_FM-' in entry.name:
-    # os.rename(entry, entry.name.strip())
-    # os.rename(entry, string.capwords(entry.name))
-    os.rename(entry, entry.name.replace(to_be_replaced, by_replace))  
+    for entry in entries:
+      # if '+Bhoot_FM-' in entry.name:
+      # os.rename(entry, entry.name.strip())
+      # os.rename(entry, string.capwords(entry.name))
+      os.rename(entry, entry.name.replace(to_be_replaced, by_replace))  
 
 
 path = ''
