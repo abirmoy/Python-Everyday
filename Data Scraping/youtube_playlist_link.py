@@ -29,7 +29,7 @@ def link_soup(url, element):
 
 
 # LINK OF THE PAGE TO SCRAP
-url = 'https://www.youtube.com/playlist?list=PLjy4p-07OYzulelvJ5KVaT2pDlxivl_BN'
+url = 'https://www.youtube.com/playlist?list=PLnbFC0ntxiqdpoWwMKCVh6BRwBePHaqQx'
 
 link_soup = link_soup(url, 'a')
 for link in link_soup:
