@@ -33,6 +33,18 @@ def replace_char(to_be_replaced, by_replace='' ,path = os.getcwd()):
       # os.rename(entry, string.capwords(entry.name))
       os.rename(entry, entry.name.replace(to_be_replaced, by_replace))  
 
+def add_suffix (suffix='' ,path = os.getcwd()):
+  '''
+  RENAMING FILE FOR CONDITION BELLOW ##
+  given name:       xxxxx.mp4
+  expected output:  xxxxxSuffix.mp4
+  '''
+  with os.scandir(path) as entries:
+    for entry in entries:
+      extension = entry.name.split('.')[-1]
+      # print(extension)
+      os.rename(entry, entry.name.split('.')[0] + ' ' + suffix + '.' + extension) #os.rename(file_to_rename, 'new_name')
+      print(entry.name)
 
 path = ''
 extention = '.mp4'
