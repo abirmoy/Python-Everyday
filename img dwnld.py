@@ -1,4 +1,5 @@
 #https://www.slideshare.net/shantypath/24398947-strategicmanagementfinalnotes
+# https://stackoverflow.com/questions/30229231/python-save-image-from-url
 import urllib.request
 
 page_num = 309
